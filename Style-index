@@ -362,16 +362,20 @@ body {
 }
 
 .terms {
-    text-align: center;
-    max-width: 300px;
-    color: #999;
-    font-size: 14px;
-    line-height: 20px;
+  text-align: center; /* Centraliza o texto e os links */
+  width: 100%;        /* Garante que ocupe a largura da coluna */
+  margin: 15px auto;  /* Dá um espaço do botão do Google e centraliza o bloco */
+  display: block;     /* Garante que ele se comporte como um bloco inteiro */
 }
 
 .terms a {
-    color: #d4a017;
-    text-decoration: none;
+  color: #ffcc00;     /* Mantém aquele dourado bacana que você está usando */
+  text-decoration: none; /* Remove o sublinhado se você quiser um visual mais limpo */
+  font-weight: bold;  /* Deixa o link com mais destaque */
+}
+
+.terms a:hover {
+  text-decoration: underline; /* O sublinhado aparece só quando passa o mouse */
 }
 
 /* ================= RESPONSIVIDADE ================= */
