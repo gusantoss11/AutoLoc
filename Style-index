@@ -12,15 +12,17 @@ body {
     font-family: 'Poppins', sans-serif;
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* ✅ CORRETO */
-    padding-top: 40px; /* 👈 controla o espaço de cima */
+    align-items: flex-start;
+    /* ✅ CORRETO */
+    padding-top: 40px;
+    /* 👈 controla o espaço de cima */
     overflow: hidden;
     position: relative;
 }
 
 /* EFEITOS DE LUZ */
-.blur{
-    display:none;
+.blur {
+    display: none;
 }
 
 .blur1 {
@@ -48,15 +50,20 @@ body {
     border: 1px solid rgba(212, 175, 55, 0.2);
     border-radius: 30px;
     display: flex;
+    align-items: center;
+    /* ADICIONA ISSO */
     overflow: hidden;
     position: relative;
     z-index: 2;
-    gap:30px; /* espaço entre os lados */
+    gap: 30px;
+
+    align-items: center;
+
 }
 
 /* LADO ESQUERDO */
-.left-side{
-    padding-bottom:20px;
+.left-side {
+    padding-bottom: 20px;
 }
 
 /* ÁREA DA LOGO */
@@ -75,12 +82,14 @@ body {
     justify-content: center;
     align-items: flex-start;
 
-    margin-top: -80px; /* sobe a logo */
+    margin-top: -80px;
+    /* sobe a logo */
     margin-bottom: 20px;
 }
 
 .logo-img {
-    width: 420px; /* aumenta a logo */
+    width: 360px;
+    /* aumenta a logo */
     height: auto;
     max-width: 100%;
 }
@@ -121,9 +130,15 @@ body {
 /* FEATURES */
 .feature {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 22px;
     margin-bottom: 35px;
+}
+
+.feature-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .icon {
@@ -362,20 +377,28 @@ body {
 }
 
 .terms {
-  text-align: center; /* Centraliza o texto e os links */
-  width: 100%;        /* Garante que ocupe a largura da coluna */
-  margin: 15px auto;  /* Dá um espaço do botão do Google e centraliza o bloco */
-  display: block;     /* Garante que ele se comporte como um bloco inteiro */
+    text-align: center;
+    /* Centraliza o texto e os links */
+    width: 100%;
+    /* Garante que ocupe a largura da coluna */
+    margin: 15px auto;
+    /* Dá um espaço do botão do Google e centraliza o bloco */
+    display: block;
+    /* Garante que ele se comporte como um bloco inteiro */
 }
 
 .terms a {
-  color: #ffcc00;     /* Mantém aquele dourado bacana que você está usando */
-  text-decoration: none; /* Remove o sublinhado se você quiser um visual mais limpo */
-  font-weight: bold;  /* Deixa o link com mais destaque */
+    color: #ffcc00;
+    /* Mantém aquele dourado bacana que você está usando */
+    text-decoration: none;
+    /* Remove o sublinhado se você quiser um visual mais limpo */
+    font-weight: bold;
+    /* Deixa o link com mais destaque */
 }
 
 .terms a:hover {
-  text-decoration: underline; /* O sublinhado aparece só quando passa o mouse */
+    text-decoration: underline;
+    /* O sublinhado aparece só quando passa o mouse */
 }
 
 /* ================= RESPONSIVIDADE ================= */
@@ -389,7 +412,15 @@ body {
     }
 
     .left-side {
-        padding: 35px 25px;
+
+        padding-bottom: 20px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        text-align: center;
     }
 
     .right-side {
@@ -408,8 +439,10 @@ body {
     }
 
     .feature {
-        gap: 15px;
-        margin-bottom: 25px;
+        display: flex;
+        align-items: center;
+        gap: 22px;
+        margin-bottom: 35px;
     }
 
     .icon {
@@ -424,7 +457,7 @@ body {
 
     .feature p {
         font-size: 16px;
-        
+
     }
 
     .stats {
@@ -441,9 +474,10 @@ body {
     }
 
 }
-.left-side{
+
+.left-side {
     padding-top: 120px;
-    padding-bottom:20px;
+    padding-bottom: 20px;
 }
 
 /* CELULAR */
@@ -496,7 +530,7 @@ body {
 
     .tabs {
         width: 100%;
-        
+
     }
 
     .tabs button {
@@ -617,13 +651,15 @@ body {
     }
 
 }
-.feature h3{
-    color:#ffffff !important;
+
+.feature h3 {
+    color: #ffffff !important;
 }
 
-.feature p{
-    color:#dddddd !important;
+.feature p {
+    color: #dddddd !important;
 }
-.top-text{
+
+.top-text {
     color: #dddddd !important;
 }
