@@ -71,21 +71,20 @@ body {
 
 /* LOGO NO TAMANHO CERTO */
 .logo {
-    width: 320px;
-    /* tamanho correto */
-    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
 
-    object-fit: contain;
-    display: block;
+    margin-top: -80px; /* sobe a logo */
+    margin-bottom: 20px;
 }
 
 .logo-img {
-
-    height: 80px;
-    width: auto;
+    width: 420px; /* aumenta a logo */
+    height: auto;
     max-width: 100%;
-    object-fit: contain;
 }
+
 
 
 
@@ -493,6 +492,7 @@ body {
 
     .tabs {
         width: 100%;
+        
     }
 
     .tabs button {
